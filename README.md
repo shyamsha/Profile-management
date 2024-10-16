@@ -65,5 +65,8 @@ Make sure you have the following installed:
    json-server --watch db.json --port 3030
    ```
 
+   - Run on a separate terminal.
+   - This will start the mock API server on port 3030.
+
 - In development mode, the app will use the API URL from the .env file.
 - In production mode, the app will use the production API URL from the .env file.
