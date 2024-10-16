@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, memo } from "react";
 import { useProfile } from "../contexts/ProfileContext";
 import { fetchProfile, deleteProfile } from "../api";
 import { useNavigate } from "react-router-dom";
@@ -86,4 +86,4 @@ const ProfileDisplay: React.FC = () => {
   );
 };
 
-export default ProfileDisplay;
+export default memo(ProfileDisplay);

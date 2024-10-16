@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import "../App.css";
 import { useNavigate } from "react-router-dom";
 
@@ -32,4 +32,4 @@ function ProfileCard({ profile, handleDelete }: Props) {
   );
 }
 
-export default ProfileCard;
+export default memo(ProfileCard);
